@@ -1,0 +1,116 @@
+﻿@model kozvetito.Areas.allas.Models.Egyetem
+           
+<input type="button" value="Új hozzáadása" id="ujIskola" class="control-label col-md-2" />
+
+<div id="iskola" title="Új iskola hozzáadása">
+    @using (Html.BeginForm("ujIskola", "Oneletrajz", FormMethod.Post, new { id = "iskolaForm" }))
+    {
+            <p>
+                Az iskola típusa:
+                <select name="iskolaTipus" id="iskolaTipus" onchange=" tipusChange(); ">
+                    <option value="1" selected>Középiskola</option>
+                    <option value="2">Főiskola</option>
+                    <option value="3">Egyetem</option>
+                </select>
+            </p>
+            <p>
+                Iskola neve: @Html.TextBoxFor(model => model.Iskola, new { name = "iskolaIskola", id = "iskolaIskola"})
+                @Html.ValidationMessageFor(model => model.Iskola)
+            </p>
+            <p>
+                Település: @Html.TextBoxFor(model => model.Varos, new { name = "iskolaVaros", id = "iskolaVaros" })
+                @Html.ValidationMessageFor(model => model.Varos)
+            </p>
+
+            <p>
+                Időszak:
+                <select id="iskStartYear" name="iskolaStartYear">
+                    @for (int year = DateTime.UtcNow.Year; year > DateTime.UtcNow.Year - 65; year--)
+                    {
+                        <option>@year</option>
+                    }
+                </select>
+                -
+                <select id="iskEndYear" name="iskolaEndYear">
+                    @for (int year = DateTime.UtcNow.Year; year > DateTime.UtcNow.Year - 65; year--)
+                    {
+                        <option>@year</option>
+                    }
+                </select>
+            </p>
+            <p>
+                <div id="szak" class="hidden">
+                    Szak:
+                    @*@Html.DropDownListFor(model => model.SzakKod, (IEnumerable<SelectListItem>)ViewBag.Szak, new { @id = "SzakKod" })*@
+                    @Html.DropDownListFor(model => model.SzakKod, ViewData["szak"] as IEnumerable<SelectListItem>, new { name = "iskolaSzakKod", id = "iskolaSzakKod" })
+                </div>
+            </p>
+    }
+</div>
+
+<script>
+    $("#iskola").dialog({
+        autoOpen: false,
+        width: 500,
+        modal: true,
+        show: {
+            effect: "scale",
+            duration: 500
+        },
+        hide: {
+            effect: "explode",
+            duration: 500
+        },
+        buttons: {
+            "Hozzáad": function () {
+
+                $(this).dialog("close");
+                $.post("Oneletrajz/ujIskola",
+                {
+                    Tipus: $('#iskolaTipus').val(),
+                    Iskola: $('#iskolaIskola').val(),
+                    Varos: $('#iskolaVaros').val(),
+                    StartYear: $('#iskStartYear').val(),
+                    EndYear: $('#iskEndYear').val(),
+                    SzakKod: $('#iskolaSzakKod').val()
+                },
+                    function(data, status, xhr) {
+                        if (!data.Success) {
+                            $.msgBox({
+                                title: "Sikertelen iskolafelvitel",
+                                content: "Nem sikerült elmenteni az általad megadott iskolát.",
+                                type: "error"
+                            });
+                        } else {
+                            window.location.href = "Oneletrajz";
+                        }
+                    });
+
+                //$("#iskolaForm").submit();
+
+            },
+            "Mégse": function () {
+                $(this).dialog("close");
+            }
+        }
+    })
+    
+    $("#ujIskola").on("click", function () {
+        $("#iskola").dialog("open");
+    });
+    
+    $("#iskolaForm").validate({
+        rules: {
+            Iskola: { required: true },
+            Varos: { required: true }
+        }
+    })
+
+    function tipusChange() {
+        if ($("#iskolaTipus").val() == "2" || $("#iskolaTipus").val() == "3") {
+            $("#szak").removeClass();
+        } else {
+            $("#szak").addClass("hidden");
+        }
+    }
+</script>

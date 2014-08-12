@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://dev.voxinfo.hu/PayPlazaWeb/PayPlazaServiceV5.asmx?wsdl" docRef="http://dev.voxinfo.hu/PayPlazaWeb/PayPlazaServiceV5.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://dev.voxinfo.hu/PayPlazaWeb/PayPlazaServiceV5.asmx" xmlns:q1="http://services.voxpay.hu/" binding="q1:PayPlazaServiceV5Soap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://dev.voxinfo.hu/PayPlazaWeb/PayPlazaServiceV5.asmx" xmlns:q2="http://services.voxpay.hu/" binding="q2:PayPlazaServiceV5Soap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

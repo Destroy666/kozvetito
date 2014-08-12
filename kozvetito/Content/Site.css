@@ -1,0 +1,180 @@
+﻿body {
+    margin: 0 auto;
+    width: 999px;
+    background-color: #004c00;
+}
+
+a {
+    color: black;
+}
+
+    a:hover {
+        color: #ff0000;
+    }
+
+header {
+    width: 999px;
+}
+
+nav {
+
+}
+
+    nav ul {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+            nav ul li a {
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: large;
+                display: block;
+                margin: 0;
+                color: black;
+            }
+
+                nav ul li a:hover {
+                    text-decoration: none;
+                    color: white;
+                }
+
+main {
+    margin: 0;
+    padding: 40px 10px 10px 0;
+    min-height: 700px;
+}
+
+aside {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+    border-radius: 0 30px 30px 0;
+}
+
+.belepGomb {
+    text-align: center;
+}
+
+    .belepGomb input[type="button"] {
+        margin: 2px;
+    }
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+    section > h2:first-child {
+        margin-top: 0;
+    }
+
+
+article p {
+    /*text-align: justify;*/        
+}
+
+article.hir img {
+    padding-left: 10px;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #ff0000;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+.col-custom {
+    width: 72%;
+    float: left;
+    padding: 0 15px;
+
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.margin-top25 {
+    margin-top: 25px;
+}
+
+.margin-top50 {
+    margin-top: 50px;
+}
+
+.margin-top100 {
+    margin-top: 100px;
+}
+
+.width50 {
+    width: 50px;
+}
+
+.width100 {
+    width: 100px;
+}
+
+.width150 {
+    width: 150px;
+}
+
+.widthmax {
+    width: 100%;
+    padding: 20px;
+}
+
+.bg-gray {
+    background-color: #d7d7d7;
+}

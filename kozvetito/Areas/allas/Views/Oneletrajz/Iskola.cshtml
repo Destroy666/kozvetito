@@ -1,0 +1,44 @@
+﻿@model IEnumerable<kozvetito.Areas.allas.Models.Egyetem>
+
+
+<h3>Iskolák</h3>
+
+<div class="form-group">
+    @Html.Action("UjIskola")
+    <div class="col-md-10">
+        <table class="iskolaTable">
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StartYear)
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EndYear)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Iskola)
+
+                        @if (item.Tipus != 1)
+                        {
+                            @:(
+                            @Html.DisplayFor(modelItem => item.SzotarIskolaSzak.Hu)
+                            @:)
+                        }
+                        <br/>
+                        @Html.DisplayFor(modelItem => item.Varos)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Törlés", "IskolaTorles", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+

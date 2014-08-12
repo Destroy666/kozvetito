@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://services.voxpay.hu/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://services.voxpay.hu/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://services.voxpay.hu/">
+      <s:element name="GetTridStr">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTridStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTridStrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPaymentDetailsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreparePayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="returnUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="notificationUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productsXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopRemark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopImageUrl" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isTestMode" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreparePaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreparePaymentResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DirectPay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="returnUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="notificationUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productsXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="invoiceXml" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="needInvoice" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopRemark" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isTestMode" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DirectPayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DirectPayResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="merchantCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userPhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productsXml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paymentMethod" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="returnUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="notificationUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="currency" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="language" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="shopRemark" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="invoiceForXml" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="needInvoice" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="isTestMode" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PaymentRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PaymentRequestResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTridStrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTridStr" />
+  </wsdl:message>
+  <wsdl:message name="GetTridStrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTridStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPaymentDetails" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPaymentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreparePaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:PreparePayment" />
+  </wsdl:message>
+  <wsdl:message name="PreparePaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:PreparePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="DirectPaySoapIn">
+    <wsdl:part name="parameters" element="tns:DirectPay" />
+  </wsdl:message>
+  <wsdl:message name="DirectPaySoapOut">
+    <wsdl:part name="parameters" element="tns:DirectPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="PaymentRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:PaymentRequest" />
+  </wsdl:message>
+  <wsdl:message name="PaymentRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:PaymentRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PayPlazaServiceV5Soap">
+    <wsdl:operation name="GetTridStr">
+      <wsdl:input message="tns:GetTridStrSoapIn" />
+      <wsdl:output message="tns:GetTridStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentDetails">
+      <wsdl:input message="tns:GetPaymentDetailsSoapIn" />
+      <wsdl:output message="tns:GetPaymentDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreparePayment">
+      <wsdl:input message="tns:PreparePaymentSoapIn" />
+      <wsdl:output message="tns:PreparePaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DirectPay">
+      <wsdl:input message="tns:DirectPaySoapIn" />
+      <wsdl:output message="tns:DirectPaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PaymentRequest">
+      <wsdl:input message="tns:PaymentRequestSoapIn" />
+      <wsdl:output message="tns:PaymentRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PayPlazaServiceV5Soap" type="tns:PayPlazaServiceV5Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTridStr">
+      <soap:operation soapAction="http://services.voxpay.hu/GetTridStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentDetails">
+      <soap:operation soapAction="http://services.voxpay.hu/GetPaymentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreparePayment">
+      <soap:operation soapAction="http://services.voxpay.hu/PreparePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DirectPay">
+      <soap:operation soapAction="http://services.voxpay.hu/DirectPay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentRequest">
+      <soap:operation soapAction="http://services.voxpay.hu/PaymentRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PayPlazaServiceV5Soap12" type="tns:PayPlazaServiceV5Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTridStr">
+      <soap12:operation soapAction="http://services.voxpay.hu/GetTridStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentDetails">
+      <soap12:operation soapAction="http://services.voxpay.hu/GetPaymentDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreparePayment">
+      <soap12:operation soapAction="http://services.voxpay.hu/PreparePayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DirectPay">
+      <soap12:operation soapAction="http://services.voxpay.hu/DirectPay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PaymentRequest">
+      <soap12:operation soapAction="http://services.voxpay.hu/PaymentRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PayPlazaServiceV5">
+    <wsdl:port name="PayPlazaServiceV5Soap" binding="tns:PayPlazaServiceV5Soap">
+      <soap:address location="http://dev.voxinfo.hu/PayPlazaWeb/PayPlazaServiceV5.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PayPlazaServiceV5Soap12" binding="tns:PayPlazaServiceV5Soap12">
+      <soap12:address location="http://dev.voxinfo.hu/PayPlazaWeb/PayPlazaServiceV5.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

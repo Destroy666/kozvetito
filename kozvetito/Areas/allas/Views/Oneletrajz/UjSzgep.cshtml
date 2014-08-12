@@ -1,0 +1,126 @@
+﻿<input type="button" value="Új hozzáadása" id="ujSzgep" class="control-label col-md-2" />
+
+<div id="szgep" title="Számítógépes ismeretek">
+    <select id="szgepSel" onchange="szgepChange();">
+        <option value="1">Felhasználói ismeretek</option>
+        <option value="2">Adminisztrációs ismeretek</option>
+        <option value="3">Programozói ismeretek</option>
+    </select>
+
+    @Html.Action("UjIsm")
+
+    @Html.Action("UjAdmin")
+
+    @Html.Action("UjProg")
+</div>
+
+<script>
+    $("#szgep").dialog({
+        autoOpen: false,
+        width: 500,
+        modal: true,
+        show: {
+            effect: "scale",
+            duration: 500
+        },
+        hide: {
+            effect: "explode",
+            duration: 500
+        },
+        buttons: {
+            "Hozzáad": function () {
+                $(this).dialog("close");
+
+                var data = $("#szgepSel").val();
+
+                switch (data) {
+                    case "1":
+                        $.post("Oneletrajz/ujFelhIsm",
+                        {
+                            IsmeretKod: $('#felhIsmeretKod').val(),
+                            TudasszintKod: $('#felhTudasszintKod').val()
+                        },
+                            function (data, status, xhr) {
+                                if (!data.Success) {
+                                    $.msgBox({
+                                        title: "Sikertelen adatfelvitel",
+                                        content: "Nem sikerült elmenteni az általad megadott számítógépes ismeretet.",
+                                        type: "error"
+                                    });
+                                } else {
+                                    window.location.href = "Oneletrajz";
+                                }
+                            });
+                        break;
+                    case "2":
+                        $.post("Oneletrajz/ujAdmin",
+                            {
+                                IsmeretKod: $('#adminIsmeretKod').val(),
+                                TudasszintKod: $('#adminTudasszintKod').val()
+                            },
+                            function(data, status, xhr) {
+                                if (!data.Success) {
+                                    $.msgBox({
+                                        title: "Sikertelen adatfelvitel",
+                                        content: "Nem sikerült elmenteni az általad megadott számítógépes ismeretet.",
+                                        type: "error"
+                                    });
+                                } else {
+                                    window.location.href = "Oneletrajz";
+                                }
+                            });
+                        break;
+                    case "3":
+                        $.post("Oneletrajz/ujProg",
+                            {
+                                IsmeretKod: $('#progIsmeretKod').val(),
+                                TudasszintKod: $('#progTudasszintKod').val()
+                            },
+                            function(data, status, xhr) {
+                                if (!data.Success) {
+                                    $.msgBox({
+                                        title: "Sikertelen adatfelvitel",
+                                        content: "Nem sikerült elmenteni az általad megadott számítógépes ismeretet.",
+                                        type: "error"
+                                    });
+                                } else {
+                                    window.location.href = "Oneletrajz";
+                                }
+                            });
+                        break;
+                    default:
+                }
+            },
+            "Mégse": function () {
+                $(this).dialog("close");
+            }
+        }
+    })
+
+    $("#ujSzgep").on("click", function () {
+        $("#szgep").dialog("open");
+    })
+
+    function szgepChange() {
+        var data = $("#szgepSel").val();
+
+        switch (data) {
+            case "1":
+                $("#felhismForm").removeClass();
+                $("#adminForm").addClass("hidden");
+                $("#progForm").addClass("hidden");
+                break;
+            case "2":
+                $("#felhismForm").addClass("hidden");
+                $("#adminForm").removeClass();
+                $("#progForm").addClass("hidden");
+                break;
+            case "3":
+                $("#felhismForm").addClass("hidden");
+                $("#adminForm").addClass("hidden");
+                $("#progForm").removeClass();
+                break;
+            default:
+        }
+    }
+</script>

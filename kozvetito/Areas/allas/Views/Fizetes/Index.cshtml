@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Fizetés";
+    Layout = "~/Areas/allas/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Fizetés</h2>
+
+<h4>Válassza ki az önnek megfelelő fizetési módot:</h4>
+
+@Html.ActionLink("Bankkártya","Bankkartya","Fizetes",new {area = "allas", eszkoz="bankcard"},new { @class = "button width150" })
+@Html.ActionLink("Átutalás", "Bankkartya", "Fizetes", new {area = "allas", eszkoz = "onlinetransfer"}, new { @class = "button width150" })
+<br/>
+<IMG src="../../../../Content/image/bankkartya.jpg" alt="" class="margin-top25"/>
+
+<p class="margin-top50 widthmax bg-gray">
+    <IMG src="../../../../Content/image/voxpay_5.gif" alt="" /><br/>
+    <br/>
+    <b>A bankkártyás fizetési rendszer üzemeltetője a Voxinfo Kft.</b><br/>
+    Elérhetőségek:<br/>
+    Telefon: 06-1-225-7603<br/>
+    E-mail: ugyfelszolgalat@voxinfo.hu<br/>
+    Munkanapokon 09-17.30 között
+</p>

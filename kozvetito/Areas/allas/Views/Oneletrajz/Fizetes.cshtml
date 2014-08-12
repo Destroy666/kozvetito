@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Csak platina ügyfeleink részére";
+    Layout = "~/Areas/allas/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Nincs jogosultságod ehhez az oldalhoz</h2>
+
+<p>
+    Az önéletrajzot csak platina ügyfeleink tölthetik ki.
+</p>
+<p class="text-center margin-top100">
+    @Html.ActionLink("Szeretnék platina ügyfél lenni","Index","Fizetes", null, new { @class = "button"})
+</p>
+

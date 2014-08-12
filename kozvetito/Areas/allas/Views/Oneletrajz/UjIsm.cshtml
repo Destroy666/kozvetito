@@ -1,0 +1,13 @@
+﻿@model kozvetito.Areas.allas.Models.SzgepIsmFelh
+
+@using (Html.BeginForm("ujIsm", "Oneletrajz", FormMethod.Post, new { id = "felhismForm" }))
+{
+    <p>
+        @Html.LabelFor(model => model.IsmeretKod)
+        @Html.DropDownListFor(model => model.IsmeretKod, (IEnumerable<SelectListItem>)ViewBag.SzgepIsmFelh, new{id="felhIsmeretKod",name="felhIsmeretKod"})
+    </p>
+    <p>
+        @Html.LabelFor(model => model.TudasszintKod)
+        @Html.DropDownListFor(model => model.TudasszintKod, (IEnumerable<SelectListItem>)ViewBag.Tudasszint, new{id="felhTudasszintKod",name="felhTudasszintKod"})
+    </p>
+}

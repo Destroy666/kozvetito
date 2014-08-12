@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = ViewBag.Header;
+    Layout = "~/Areas/allas/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Header</h2>
+
+@using (Html.BeginForm())
+{
+    @:<h3>Válassz csomagot</h3>
+
+
+    <input type="radio" id="csomag" name="csomag" value="gold" checked /> @:Gold csomag - 2000 Ft (1575 Ft + ÁFA)
+    <br />
+    <input type="radio" id="csomag" name="csomag" value="platina" /> @:Platina csomag - 4500 Ft (3543 Ft + ÁFA)
+    <br />
+    <h4>Add meg az elérhetőségeidet (nem kötelező):</h4>
+    @:Telefonszámod (nem kötelező): <input type="tel" id="tel" name="tel" />
+    <br />
+    @:E-mail címed (nem kötelező): <input type="email" id="email" name="email" />
+    <br />
+    <br/>
+    @Html.CheckBox("kellszamla",false) @:Kérek számlát
+    <div id="szamla" style="display: none">
+        <b>A vastagon szedett mezők kitöltése kötelező!</b><br/>
+        <b>Név:</b> <input type="text" id="nev" name="nev" /><br/>
+        Adószám: <input type="text" id="adoszam" name="adoszam" /><br />
+        Közadoszám: <input type="text" id="kozadoszam" name="kozadoszam" /><br />
+        <b>Ország:</b> <input type="text" id="orszag" name="orszag" /><br />
+        <b>Település:</b> <input type="text" id="telepules" name="telepules" /><br />
+        <b>Irányítószám:</b> <input type="number" id="irszam" name="irszam" /><br />
+        <b>Közterület neve:</b> <input type="text" id="kozternev" name="kozternev" /><br />
+        Közterület jellege: <input type="text" id="kozterjell" name="kozterjell" /><br />
+        Házszám: <input type="text" id="hazszam" name="hazszam" /><br />
+        Lépcsőház: <input type="text" id="lepcsohaz" name="lepcsohaz" /><br />
+        Emelet: <input type="number" id="emelet" name="emelet" /><br />
+        Ajtó:<input type="text" id="ajto" name="ajto" />
+    </div>
+    <br />
+    
+    <input type="submit" value="Fizetek" class="btn btn-default" />
+}
+
+<script>
+    $('#kellszamla').click(function () {
+        $('#szamla').toggle(this.checked);
+    })
+</script>

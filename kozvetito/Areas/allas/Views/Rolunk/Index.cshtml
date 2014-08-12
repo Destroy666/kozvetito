@@ -1,0 +1,97 @@
+﻿@using System.Threading
+
+@{
+    ViewBag.Title = MainLang.rolunk;
+}
+
+<h2>@MainLang.rolunk</h2>
+
+@if (Thread.CurrentThread.CurrentCulture.Name == "hu")
+{
+    <h3>ZELDO Szolgáltató, Közvetítő és Kereskedelmi Korlátolt Felelősségű Társaság</h3>
+
+    <p><strong>ZELDO Kft.</strong></p>
+
+    <p>
+        <strong>Telephely:</strong>
+        Magyarország
+        <br />
+        Eger Kallóalom u. 78. 3/9.
+        <br />
+        3300
+    </p>
+
+    <p>
+        <strong>Ügyvezető igazgató:</strong>
+        Zelei Józsefné
+        <br />
+        Cégjegyzékszám: 10-09-031477
+        <br />
+        Adószám: 11170406-2-30
+        <br />
+        Törzstőke: 3.000 000 Ft.
+        <br />
+        Alapítva: 1995
+    </p>
+
+    <p>
+        <strong>Ausztriai érdekeltség:</strong>
+        Schwedenplatz, 1010 Wien, Österreich
+        <br />
+        GPS koordináták: 48.213349, 16.36658247
+        <br />
+        Wormerstarße, 7000 Eisenstadt, Österreich /Burgerland/
+    </p>
+
+    <p>
+        <strong>Ars poetica</strong>
+        Cégünk 1995-ben alakult és az elsők között foglalkozott magán munkaerő közvetítéssel az Észak – magyarországi régióban. Így e tevékenység közel 15 éves múltra tekint vissza. Jelen működésünk teljesen eltér az akkori szisztémától. Cégünknél a munkaerő közvetítés ingyenes szolgáltatás, honlapunkon a munkáltatók és munkavállalók hirdetéseinek és egymásra találási lehetőségének adunk helyet. Önéletrajz írással, fordítással, jelentkezési, eladhatósági tanácsokkal, személyiség erősítő módszerekkel, jogi és elhelyezkedési tanácsokkal támogatjuk a sikeres munkavállalást. Illetve, hírmagazin struktúránkkal segítjük a munkavállalókat ingyenes munka lehetőségekhez.
+        <br />
+        A misszión a munkaközvetítés, de az igazi feladatunk a munkahely megtalálásakor, betöltésekor és azt követően kezdődik.
+        <br />
+        Az elhelyezkedett munkavállalók, biztonságának növelése, szakmai tájékoztatása, szakmai segítségnyújtás, munkatanácsadás, jogitanácsadás.
+    </p>
+
+}
+else if (Thread.CurrentThread.CurrentCulture.Name == "de")
+{
+    <p>
+        <strong>ZELDO Handels- und Dienstleistungs GmbH</strong>
+    </p>
+    <p>
+        Standort:
+    </p>
+    <p>
+        Kallómalom u. 78. 3.9.
+        <br />
+        H - 3300 Eger
+        <br />
+        Ungarn
+    </p>
+    <p>
+        <strong>Geschäftsführer: </strong> Zelei József
+        <br />
+        Handelsregister: 10-09-031477
+        <br />
+        Steuernr: 11170406-2-30
+        <br />
+        Beteiligungskapital: 3.000 000 Ft.
+        <br />
+        Gegründet: 1995
+    </p>
+    <p>
+        <strong>
+            Standort in Österreich:
+        </strong>
+        <br />
+        Schwedenplatz 5
+        <br />
+        A - 1010 Wien
+        <br />
+        GPS Koordinaten: 48.213349, 16.36658247
+        <br />
+        Wormserstarße 5
+        <br />
+        7000 Eisenstadt,
+    </p>
+}

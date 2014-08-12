@@ -1,0 +1,61 @@
+﻿@model kozvetito.Areas.allas.Models.BeszeltNyelv
+
+<input type="button" value="Új hozzáadása" id="ujNyelv" class="control-label col-md-2" />
+
+<div id="beszeltnyelv" title="Beszélt nyelvek">
+    @using (Html.BeginForm("ujBeszeltnyelv", "Oneletrajz", FormMethod.Post, new { id = "beszeltnyelvForm" }))
+    {
+        <p>
+            @Html.LabelFor(model => model.NyelvKod):
+            @Html.DropDownListFor(model => model.NyelvKod, (IEnumerable<SelectListItem>)ViewBag.Nyelv, new { id = "nyelvNyelvKod", name = "nyelvNyelvKod" })
+        </p>
+        <p>
+            @Html.LabelFor(model => model.IsmeretKod):
+            @Html.DropDownListFor(model => model.IsmeretKod, (IEnumerable<SelectListItem>)ViewBag.NyelvTudasszint, new { id = "nyelvIsmeretKod", name = "nyelvIsmeretKod" })
+        </p>
+    }
+</div>
+
+<script>
+    $("#beszeltnyelv").dialog({
+        autoOpen: false,
+        width: 500,
+        modal: true,
+        show: {
+            effect: "scale",
+            duration: 500
+        },
+        hide: {
+            effect: "explode",
+            duration: 500
+        },
+        buttons: {
+            "Hozzáad": function () {
+                $(this).dialog("close");
+                $.post("Oneletrajz/ujNyelv",
+                {
+                    NyelvKod: $('#nyelvNyelvKod').val(),
+                    IsmeretKod: $('#nyelvIsmeretKod').val()
+                },
+                    function(data, status, xhr) {
+                        if (!data.Success) {
+                            $.msgBox({
+                                title: "Sikertelen nyelvfelvitel",
+                                content: "Nem sikerült elmenteni az általad megadott nyelvet.",
+                                type: "error"
+                            });
+                        } else {
+                            window.location.href = "Oneletrajz";
+                        }
+                    });
+            },
+            "Mégse": function () {
+                $(this).dialog("close");
+            }
+        }
+    })
+
+    $("#ujNyelv").on("click", function () {
+        $("#beszeltnyelv").dialog("open");
+    });
+</script>

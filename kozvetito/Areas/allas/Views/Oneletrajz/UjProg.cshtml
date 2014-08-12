@@ -1,0 +1,13 @@
+﻿@model kozvetito.Areas.allas.Models.SzgepIsmProg
+           
+@using (Html.BeginForm("ujProg", "Oneletrajz", FormMethod.Post, new { id = "progForm", @class = "hidden" }))
+{
+    <p>
+        @Html.LabelFor(model => model.IsmeretKod)
+        @Html.DropDownListFor(model => model.IsmeretKod, (IEnumerable<SelectListItem>)ViewBag.SzgepIsmProg, new {id="progIsmeretKod", name="progIsmeretKod"})
+    </p>
+    <p>
+        @Html.LabelFor(model => model.TudasszintKod)
+        @Html.DropDownListFor(model => model.TudasszintKod, (IEnumerable<SelectListItem>)ViewBag.Tudasszint, new {id="progTudasszintKod", name="progTudasszintKod"})
+    </p>
+}

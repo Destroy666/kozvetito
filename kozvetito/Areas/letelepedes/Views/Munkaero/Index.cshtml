@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Munkaerő - állás";
+    Layout = "~/Areas/letelepedes/Views/Shared/_Layout.cshtml";
+}
+
+<article>
+    <h3>2.2 Munkaerő / állás</h3>
+
+    <h4>2.2.1. Munkaerő közvetítés - partner iroda ajánlással</h4>
+    <p>Felhívjuk figyelmét, a munkaerő közvetítés ingyenes, de közvetíteni csak regisztráltakat tudunk.</p>
+    
+    <h4>2.2.2. Önéletrajz</h4>
+    <p>
+        Önéletrajzát kérésére elkészítjük és lefordítjuk.
+        Ezt a munkaerő hirdetési portálunkon teheti meg regisztrációval.
+    </p>
+    
+    <h4>2.2.3. Munkaerő hirdetési portál</h4>
+    <p>
+        Amennyiben családostól költöznek külföldre, elképzelhető, hogy házastársának is szükség van munkára.
+        Hirdetési portálunkon hirdetést adhatnak fel.
+        Ezt a regisztráció és személyes adatok megadását követően teheti meg.
+    </p>
+    <p>
+        Tájékoztatónkat a következő linken találja.
+        @Html.ActionLink("http://exclusiveteam.net/allas", "Index", "Fooldal", new { area = "allas" }, null)
+    </p>
+    <p>
+        Munka lehetőségekről a következő linkeken tájékozódhat. 
+    </p>
+    
+    <h4>2.2.4. Munkavállalási tanácsadás</h4>
+    <p>
+        Kérésére tájékoztatjuk az ausztriai lehetőségekről.<br/>
+        Néhány praktikus információ.<br/>
+        @Html.ActionLink("http://exclusiveteam.net/allas","Index","Fooldal",new {area = "allas"}, null)
+    </p>
+</article>

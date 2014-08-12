@@ -1,0 +1,88 @@
+﻿@model kozvetito.Areas.allas.Models.SzakmaiTapasztalat
+
+<input type="button" value="Új hozzáadása" id="ujMunkahely" class="control-label col-md-2" />
+
+<div id="munkahely" title="Korábbi munkahelyek">
+    @using (Html.BeginForm("ujMunkahely", "Oneletrajz", FormMethod.Post, new { id = "munkahelyForm" }))
+    {
+        <p>
+            @Html.LabelFor(model => model.Munkaado):
+            @Html.TextBoxFor(model => model.Munkaado, new {id="munkaMunkaado", name="munkaMunkaado"})
+            @Html.ValidationMessageFor(model => model.Munkaado)
+        </p>
+        <p>
+            Időszak:
+            <select id="munkaStartYear" name="munkaStartYear">
+                @for (int year = DateTime.UtcNow.Year; year > DateTime.UtcNow.Year - 65; year--)
+                {
+                    <option>@year</option>
+                }
+            </select>
+            -
+            <select id="munkaEndYear" name="munkaEndYear">
+                @for (int year = DateTime.UtcNow.Year; year > DateTime.UtcNow.Year - 65; year--)
+                {
+                    <option>@year</option>
+                }
+            </select>
+        </p>
+        <p>
+            @Html.LabelFor(model => model.BeosztasKod)
+            @Html.DropDownListFor(model => model.BeosztasKod, (IEnumerable<SelectListItem>)ViewBag.Beosztas,new{id="munkaBeosztasKod", name="munkaBeosztasKod"})
+        </p>
+    }
+</div>
+
+<script>
+    $("#munkahely").dialog({
+        autoOpen: false,
+        width: 500,
+        modal: true,
+        show: {
+            effect: "scale",
+            duration: 500
+        },
+        hide: {
+            effect: "explode",
+            duration: 500
+        },
+        buttons: {
+            "Hozzáad": function () {
+                if ($("#munkahelyForm").valid()) {
+                    $(this).dialog("close");
+                    $.post("Oneletrajz/ujMunkahely",
+                        {
+                            Munkaado: $('#munkaMunkaado').val(),
+                            StartYear: $('#munkaStartYear').val(),
+                            EndYear: $('#munkaEndYear').val(),
+                            BeosztasKod: $('#munkaBeosztasKod').val()
+                        },
+                        function(data, status, xhr) {
+                            if (!data.Success) {
+                                $.msgBox({
+                                    title: "Sikertelen munkahelyfelvitel",
+                                    content: "Nem sikerült elmenteni az általad megadott munkahelyet.",
+                                    type: "error"
+                                });
+                            } else {
+                                window.location.href = "Oneletrajz";
+                            }
+                        });
+                }
+            },
+            "Mégse": function () {
+                $(this).dialog("close");
+            }
+        }
+    })
+    
+    $("#ujMunkahely").on("click", function () {
+        $("#munkahely").dialog("open");
+    });
+    
+    $("#munkahelyForm").validate({
+        rules: {
+            Munkaado: { required: true }
+        }
+    })
+</script>

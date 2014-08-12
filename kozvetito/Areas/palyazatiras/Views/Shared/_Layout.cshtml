@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ExclusiveTeam</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/mainpage")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <header>
+        <h3>Fordítás</h3>
+        
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Főoldal", "Index", "Fooldal")</li>
+                <li>@Html.ActionLink("Partnerek", "Index", "Partnerek")</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="clearfix">
+        <aside class="col-md-3">
+            @if (Request.IsAuthenticated)
+            {
+                @Html.Partial("_LoggedTemplate")
+            }
+            else
+            {
+                Html.RenderAction("Login", "User", new { area = "" });
+            }
+
+            <br />
+            @Html.Partial("_SzolgaltatasMenu")
+        </aside>
+        <section class="col-custom">
+            @RenderBody()
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - A weblapot készítette: Barasits Péter</p>
+    </footer>
+</body>
+</html>

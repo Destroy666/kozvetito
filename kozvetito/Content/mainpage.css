@@ -1,0 +1,97 @@
+﻿body {
+    background-color: #7baae1;
+    
+    color: #002780;
+}
+
+header {
+    height: 200px;
+    background: url(../Content/image/logo-small.png),url(../Content/image/banner-small-uj.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20px 0, 0 0;
+    z-index: 2;
+    position: relative;
+}
+
+    header h3 {
+        padding: 120px 0 0 0;
+        margin: 0;
+        color: #000;
+        font-weight: bold;
+        text-align: right;
+        width: 540px;
+    }
+
+nav {
+    padding: -20px 0 0 -600px;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    
+    /*/text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;*/
+    border: 1px solid rgba(0,0,0,0.5);
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.25);
+    -o-box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+    inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+    inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+    inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+    inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+}
+
+    nav ul li {
+        border-right: 1px solid #808080;
+    }
+
+    nav ul li:last-child {
+        border-right: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        background: rgba(0,0,255,0.25);
+        -o-box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+    }
+
+
+main {
+    background: #eeeeee;
+}
+
+main, header {
+    box-shadow: 0 0 15px 5px rgba(50, 50, 100, .75);
+}
+
+aside {
+    background: #efdf75; /* Old browsers */
+    background: -moz-linear-gradient(top, #efdf75 0%, #fefcea 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efdf75), color-stop(100%,#fefcea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efdf75 0%,#fefcea 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efdf75 0%,#fefcea 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efdf75 0%,#fefcea 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #efdf75 0%,#fefcea 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efdf75', endColorstr='#fefcea',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: 0 0 15px 0 rgba(168, 172, 173, .75);
+}
+
+article h3:first-child {
+    padding-bottom: 15px;
+    font-weight: bold;
+}

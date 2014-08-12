@@ -1,0 +1,142 @@
+﻿@using System.Threading
+@{
+    ViewBag.Title = MainLang.fooldal;
+}
+
+@if (Thread.CurrentThread.CurrentCulture.Name == "hu")
+{
+    <h2>Üdvözöljük az álláskeresők között!</h2>
+
+    <section class="hasab">
+        <article class="hir">
+            <a href="@Url.Action("Az_ausztriai_munkavallalas_titkai")">
+                <h1>Az ausztriai munkavállalás titkai</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/titok.jpg" />
+            <p>
+                Kiutazás előtti titkok: miről kell, hogy feltétlen tájékozódjon az ausztriai munkaviszonyba lépés előtt?
+                Az ámítás titkai: Ne dőljön be minden esetben a hirdetéseknek!
+                Az ott tartózkodást apró titkai: Ha le tudtam volna informálni….
+            </p>
+        </article>
+        <hr />
+        <article class="hir">
+            <a href="@Url.Action("Hogyan_regisztraljak_Milyen_csomagot_valasszak")">
+                <h1>Hogyan regisztráljak? Milyen csomagot válasszak?</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/reglogo.jpg" />
+            <p>
+                Mi segítünk önnek. Tájokozodjon a lehetőségekről. Hozzon egy jó döntést! A jó megoldásokat már mi kitaláltuk az ön részére. A többi már csak önön múlik, a siker csak önre vár.
+            </p>
+        </article>
+        <hr />
+        <article class="hir">
+            <a href="@Url.Action("Nekunk_az_a_fontos_ami_onnek_fontos")">
+                <h1>Nekünk az a fontos, ami önnek fontos</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/info.jpg" />
+            <p>
+                Üzlet politikánk szakít az eddigi klasszikus munkaerő közvetítéssel.
+                Ahol a munkaadó és munkavállaló közé ékelődik a közvetítő.
+                Ez rengeteg probléma és félreértés forrása volt és még az most is
+            </p>
+        </article>
+    </section>
+
+    <section class="hasab">
+        <article class="hir">
+            <a href="@Url.Action("Hogyan_kerulheti_el_a_7_legnagyobb_hibat_ausztriai_munkavallalaskor")">
+                <h1>Hogyan kerülheti el a 7 legnagyobb hibát ausztriai munkavállaláskor</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/hibak.jpg" />
+            <p>
+                Vesse el az irrealisztikus elképzeléseket a külföldi munkavállalásról. A nagy lehetőségek hazája, az aranyásók kora és a legkisebb fiú meséje már a múlté. Ne hazardírozzon! Feltéve, ha nem ez a célja!
+            </p>
+        </article>
+        <hr />
+        <article class="hir">
+            <a href="@Url.Action("A_karrierhez_vezeto_ut_lepesei")">
+                <h1>A karrierhez vezető út lépései</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/karrierhez_vezeto_ut.jpg" />
+            <p>
+                Amennyiben ön sikeres karriert szeretne futni a külföldi munkavállaslás területén, fontos a célok meghatározása, és stabil alapok megteremtése. 3 nagy csoportra osztottuk fel a leendő külföldi munkavállalók státuszát függően attól, milyen elképzelésük, információik és céljaik vannak. Ehhez képest adunk útmutatást.
+            </p>
+        </article>
+        <hr />
+        <article class="hir">
+            <h1>Munkalehetőségek Ausztriában</h1>
+            <img src="~/Areas/allas/Content/Image/Fooldal/munka.jpg" />
+            <p>
+                Az ausztriai partnereink folyamatossan megújuló munkalehetőséggel töltik fel az oldalt. Ezekről @Html.ActionLink("ide kattintva", "Index", "Allaslehetosegek") láthatja a lehetőségeket.
+            </p>
+        </article>
+    </section>
+}
+else if (Thread.CurrentThread.CurrentCulture.Name == "de")
+{
+    <h2>Willkommen bei unseren Inserenten</h2>
+
+    <section class="hasab">
+        <article class="hir">
+            <a href="@Url.Action("Welche_Anderungen_bringt")">
+                <h1>Welche Änderungen bringt der 1. 5. 2011 für den österreichischen Arbeitsmarkt?</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/titok.jpg" />
+            <p>
+                Ab diesem Zeitpunkt genießen die Staatsbürger aller neuen EU-Staaten (mit Ausnahme von
+
+                Rumänien und Bulgarien) die volle Arbeitnehmerfreizügigkeit. Wolen sie in Österreich ein
+
+                Beschäftigungsverhältnis eingehen, ist dafür keine Bewilligung mehr erforderlich. Ebenso ist die
+
+                Entsendung von Arbeitnehmern aus diesen Staaten (wieder mit Ausnahme von Rumänien und
+
+                Bulgarien) nach Österreich ohne Bewilligung möglich.
+            </p>
+        </article>
+        <hr />
+        <article class="hir">
+            <a href="@Url.Action("Ernsthafte_sanktionen_zu_rechnen_sein")">
+                <h1>
+                    Ernsthafte Sanktionen zu rechnen sein...<br>
+                    Streng kontrollierte Zeitungen...
+                </h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/reglogo.jpg" />
+            <p>
+                Arbeit, die österreichische Kontrollinstanz ("Control für Illegale Arbeitnehmerbeschäftigung") Macht kiszélesítenék, die diesem Körper geführt würde die illegale Beschäftigung zu untersuchen, die Löhne für die Einhaltung der Bestimmungen sowie.
+                Um sicherzustellen, dass die Mitarbeiter in Österreich von ungarischen Firmen, die österreichischen Behörden auf seine Papiere sowie zu überprüfen, wird natürlich zur Zahlung verpflichtet werden, die die Erstellung von Dokumenten in deutscher, eine ungarische Gesellschaft, die ständig verfügbar zu können Aufmachungen einen Fall von einer unangekündigten Kontrolle ist.
+            </p>
+        </article>
+    </section>
+
+    <section class="hasab">
+        <article class="hir">
+            <h1>
+                Warum wählen uns alles Arbeitgeber?<br />
+                Wann wählen uns alles Arbeitgeber ?
+            </h1>
+            <img src="~/Areas/allas/Content/Image/Fooldal/hibak.jpg" />
+            <p>
+                <ol>
+                    <li>Wenn Sie  der Arbeitskraft brauchen und haben Ssie ohne Arbeitskraft</li>
+                    <li>Wenn Sie unzufrieden mit dem Arbeitkollektive sind</li>
+                    <li>Wenn Sie nicht unzufrieden, aber wenigsten Lohn ebensolcher Fachwissen, oder ebensolcher Lohn besser Fachwissen, sagen Sie nicht.</li>
+                </ol>
+            </p>
+        </article>
+        <hr />
+        <article class="hir">
+            <a href="@Url.Action("Die_restriktiven_massnahmen")">
+                <h1>Die restriktiven Maßnahmen in den Bereichen Beschäftigung ungarischer Arbeitnehmer in Österreich sind 2011th erwartet Vom 1. Mai bis auslaufen.</h1>
+            </a>
+            <img src="~/Areas/allas/Content/Image/Fooldal/karrierhez_vezeto_ut.jpg" />
+            <p>
+                Die 2004 - und die EU-Beitrittsverhandlungen hat Österreich auch Vereinbarungen auf der Grundlage, dass es zu seinem eigenen Ermessen, für sieben Jahre das Recht, dh bei Erreichen
+                2011th 30 April Grenzen.
+                Die Beschränkungen gegen die ungarischen Bürger 2008. Vom 1. Januar bis teilweise aufgehoben, und seitdem, 67 lokale Unternehmen den Vorzug zu geben bei der ein vereinfachtes Verfahren für eine Arbeitserlaubnis erteilt wird.
+            </p>
+        </article>
+    </section>
+}

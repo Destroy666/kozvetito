@@ -1,0 +1,55 @@
+﻿@model kozvetito.Areas.allas.Models.MunkaKeres
+
+@{
+    ViewBag.Title = MainLang.munkat_kinalok;
+    Layout = "~/Areas/allas/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@MainLang.munkat_kinalok</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Varos, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Varos)
+                @Html.ValidationMessageFor(model => model.Varos)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Uzlet, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Uzlet)
+                @Html.ValidationMessageFor(model => model.Uzlet)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Fo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Fo) @MainLang.fo
+                @Html.ValidationMessageFor(model => model.Fo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BeosztasKod, MainLang.munka, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.BeosztasKod, ViewData["munka"] as IEnumerable<SelectListItem>)
+                @Html.ValidationMessageFor(model => model.BeosztasKod)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="@MainLang.kuldes" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
