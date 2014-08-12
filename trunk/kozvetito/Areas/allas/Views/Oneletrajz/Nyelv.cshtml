@@ -1,0 +1,26 @@
+﻿@model IEnumerable<kozvetito.Areas.allas.Models.BeszeltNyelv>
+
+
+<h3>Beszélt nyelvek</h3>
+
+<div class="form-group">
+    @Html.Action("UjNyelv")
+    <div class="col-md-10">
+        <table class="nyelvTable">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SzotarNyelv.Hu)
+                        -
+                        @Html.DisplayFor(modelItem => item.SzotarNyelvTudasszint.Hu)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Törlés", "NyelvTorles", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>  
+    </div>
+</div>

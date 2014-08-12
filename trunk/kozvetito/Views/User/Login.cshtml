@@ -1,0 +1,72 @@
+﻿@using kozvetito.Areas.allas.Resource
+@model kozvetito.Models.LoginViewModel
+
+@using (Html.BeginForm("Login","User",FormMethod.Post,new { area = "", id = "belepForm" }))
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>@MainLang.bejelentkezes</h4>
+        <hr />
+        <div id="errorBelep" class="validation-summary-errors"></div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.UserName).ToString()) })
+                @Html.ValidationMessageFor(model => model.UserName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Password).ToString()) })
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-4 col-md-10">
+                @Html.EditorFor(model => model.RememberMe)
+                @Html.DisplayNameFor(model => model.RememberMe)
+                @Html.ValidationMessageFor(model => model.RememberMe)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" value="@MainLang.belep" class="btn btn-default" onclick="belep()" />
+                @Html.ActionLink(MainLang.regisztracio,"Register","User",null,new {area = "", @class ="btn btn-default"})
+            </div>
+        </div>
+    </div>
+}
+
+@Styles.Render("~/Content/jqueryui")
+@Styles.Render("~/bundles/msgboxcss")
+
+@Scripts.Render("~/bundles/jqueryui")
+@Scripts.Render("~/bundles/jqueryval")
+@Scripts.Render("~/bundles/msgbox")
+
+<script>
+    function belep() {
+        if ($("#belepForm").valid()) {
+            $.msgBox({
+                title: "Bejelentkezés folyamatban",
+                type: "progress"
+            });
+
+            $.post("@Url.Action("Login","User", new { area = ""})",
+                $("#belepForm").serialize(),
+                function(data, status, xhr) {
+                    if (data.Success) {
+                        location.reload();
+                    } else {
+                        $(".msgBox").hide();
+                        $(".msgBoxBackGround").hide();
+                        $("#errorBelep").html(data.Errors);
+                        $("#belepForm").effect("shake");
+                    }
+                });
+        }
+    }
+</script>

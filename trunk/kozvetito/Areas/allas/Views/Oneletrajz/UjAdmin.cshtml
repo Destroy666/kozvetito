@@ -1,0 +1,13 @@
+﻿@model kozvetito.Areas.allas.Models.SzgepIsmAdmin
+           
+@using (Html.BeginForm("ujAdmin", "Oneletrajz", FormMethod.Post, new { id = "adminForm", @class = "hidden" }))
+{
+    <p>
+        @Html.LabelFor(model => model.IsmeretKod)
+        @Html.DropDownListFor(model => model.IsmeretKod, (IEnumerable<SelectListItem>)ViewBag.SzgepIsmAdmin, new {id = "adminIsmeretKod", name = "adminIsmeretKod" })
+    </p>
+    <p>
+        @Html.LabelFor(model => model.TudasszintKod)
+        @Html.DropDownListFor(model => model.TudasszintKod, (IEnumerable<SelectListItem>)ViewBag.Tudasszint, new {id = "adminTudasszintKod", name = "adminTudasszintKod"})
+    </p>
+}

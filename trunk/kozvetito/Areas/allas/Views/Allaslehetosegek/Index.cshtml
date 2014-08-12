@@ -1,0 +1,41 @@
+﻿@using System.Threading
+@model IEnumerable<kozvetito.Areas.allas.Models.MunkaKeres>
+
+@{
+    ViewBag.Title = MainLang.allaslehetosegek;
+    Layout = "~/Areas/allas/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@MainLang.allaslehetosegek</h2>
+
+@if (Thread.CurrentThread.CurrentCulture.Name == "hu")
+{
+    foreach (var item in Model) {
+    
+        @Html.DisplayFor(modelItem => item.Varos)
+        @:városában keresek
+        @Html.DisplayFor(modelItem => item.Fo)
+        @:fő alkalmazottat,
+        @Html.DisplayFor(modelItem => item.SzotarMunkahelyPozicio.Hu)
+        @:munkakörben (
+        @Html.DisplayFor(modelItem => item.Uzlet)
+        @:).
+        <hr/>
+    
+    }   
+}else if (Thread.CurrentThread.CurrentCulture.Name == "de"){
+    foreach (var item in Model) {
+    
+        @Html.DisplayFor(modelItem => item.Varos)
+        @:városában keresek
+        @Html.DisplayFor(modelItem => item.Fo)
+        @:fő alkalmazottat,
+        @Html.DisplayFor(modelItem => item.SzotarMunkahelyPozicio.De)
+        @:munkakörben (
+        @Html.DisplayFor(modelItem => item.Uzlet)
+        @:).
+        <hr/>
+    
+    }  
+}
+

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<kozvetito.Areas.allas.Models.SzgepIsmProg>
+
+@if (Model.Count() != 0)
+{
+ <h3>
+    Programozási ismeretek
+</h3>
+    <table class="nyelvTable">
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SzotarSzgepIsmProg.Hu)
+                    -
+                    @Html.DisplayFor(modelItem => item.Tudasszint.Hu)
+                </td>
+                <td>
+                    @Html.ActionLink("Törlés", "ProgTorles", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+}
+
+

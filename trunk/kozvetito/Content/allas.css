@@ -1,0 +1,213 @@
+﻿body {
+    background: #4379b7;
+}
+
+header {
+    background-image: url("../Areas/allas/Content/Image/header.jpg");
+    background-repeat: no-repeat;
+    font-size: medium;
+    padding-left: 320px;
+    padding-right: 20px;
+    height: 154px;
+}
+
+    header > b {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    header > span {
+        float: right;
+        font-size: x-large;
+        color: maroon;
+    }
+
+nav {
+    background: #29518F;
+}
+
+    nav ul li {
+        border-right: 1px solid #4379b7;
+    }
+
+        nav ul li:last-child {
+            border: none;
+        }
+
+        nav ul li a {
+            color: white;
+        }
+
+            nav ul li a:hover {
+                color: #29518F;
+                background: white;
+            }
+
+.lang {
+    margin: 10px;
+    float: right;
+}
+
+.nyelv > input[type=radio] {
+    display: none;
+}
+
+    .nyelv > input[type=radio] + img {
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    .nyelv > input[type=radio]:checked + img {
+        border: 2px solid #f00;
+    }
+
+main {
+    background: white;
+}
+
+aside {
+    background: #004799; /* Old browsers */
+    background: -moz-linear-gradient(top, #004799 0%, #7db9e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #004799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #004799 0%,#7db9e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #004799 0%,#7db9e8 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #004799 0%,#7db9e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0 0 15px 0 rgba(0, 0, 100, .75);
+}
+
+    aside h4 {
+        color: white;
+    }
+
+.hasab {
+    display: inline-block;
+    width: 46%;
+    padding: 0 10px;
+}
+
+    .hasab h1 {
+        font-size: large;
+        color: maroon;
+    }
+
+article.hir > img {
+    float: right;
+    max-width: 150px;
+    max-height: 200px;
+}
+
+article.ausztria {
+    vertical-align: top;
+    width: 49%;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+table.ausztria {
+    vertical-align: top;
+    width: 49%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+    table.ausztria tr:nth-of-type(2n+1) {
+        background-color: #cbcbcb;
+    }
+
+    table.ausztria td {
+        vertical-align: top;
+    }
+
+    table.ausztria th {
+        background-color: #808080;
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+
+table.iskolaTable, table.nyelvTable {
+    width: 100%;
+}
+
+    table.iskolaTable tr, table.nyelvTable tr {
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+        table.iskolaTable tr:last-child, table.nyelvTable tr:last-child {
+            border-bottom: none;
+        }
+
+        table.iskolaTable tr:first-child td, table.nyelvTable tr:first-child td {
+            padding-top: 0;
+        }
+
+    table.iskolaTable td, table.nyelvTable td {
+        vertical-align: top;
+        padding: 10px 0;
+    }
+
+        table.iskolaTable td:nth-of-type(1), table.iskolaTable td:nth-of-type(3) {
+            width: 10%;
+        }
+
+        table.iskolaTable td:nth-of-type(2) {
+            width: 5%;
+        }
+
+        table.iskolaTable td:last-child, table.nyelvTable td:last-child {
+            text-align: right;
+        }
+
+            table.iskolaTable td:last-child a, table.nyelvTable td:last-child a {
+                color: red;
+            }
+
+a.button {
+    -moz-box-shadow: inset 1px 1px 18px 1px #f29c93;
+    -webkit-box-shadow: inset 1px 1px 18px 1px #f29c93;
+    box-shadow: inset 1px 1px 18px 1px #f29c93;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
+    background: -moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
+    background-color: #fe1a00;
+    -webkit-border-top-left-radius: 37px;
+    -moz-border-radius-topleft: 37px;
+    border-top-left-radius: 37px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 37px;
+    -moz-border-radius-bottomright: 37px;
+    border-bottom-right-radius: 37px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-bottom-left-radius: 0px;
+    text-indent: 0;
+    border: 1px solid #d83526;
+    display: inline-block;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px #b23e35;
+}
+
+    a.button:hover {
+        background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00) );
+        background: -moz-linear-gradient( center top, #ce0100 5%, #fe1a00 100% );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
+        background-color: #ce0100;
+    }
+
+    a.button:active {
+        position: relative;
+        top: 1px;
+    }

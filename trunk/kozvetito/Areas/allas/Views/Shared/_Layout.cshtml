@@ -1,0 +1,115 @@
+﻿@using System.Threading
+@using kozvetito.Models
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ExclusiveTeam</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/allas")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</head>
+    <body>
+        @{
+            var culture = System.Threading.Thread.CurrentThread.CurrentUICulture.Name.ToLowerInvariant();
+            var teszt = "";
+        }
+
+        @helper selected(string c, string culture)
+        {
+            if (c == culture)
+            {
+                @:checked="checked"
+            }
+        }
+
+        <header>
+            <b>Mi nem a munkával foglalkozunk, hanem az Ön karrierjével!</b>
+            <br />
+            Job-carrier - Az ausztriai munkaszakértő
+            <span>
+                ausztriai
+                <img src="~/Areas/allas/Content/Image/kocka.png" />
+                munka.com    
+            </span>        
+        </header>
+
+        <nav>
+            <ul>
+                <li>@Html.ActionLink(MainLang.fooldal, "Index", "Fooldal")</li>
+                <li>@Html.ActionLink(MainLang.allaslehetosegek, "Index", "Allaslehetosegek")</li>
+                <li>@Html.ActionLink(MainLang.szolgaltatasaink, "Index", "Szolgaltatasaink")</li>
+                <li>@Html.ActionLink(MainLang.munkat_kinalok, "Index", "MunkatKinalok")</li>
+                <li>@Html.ActionLink(MainLang.rolunk, "Index", "Rolunk")</li>
+                <li>@Html.ActionLink(MainLang.arak, "Index", "Arak")</li>
+                @if (Thread.CurrentThread.CurrentCulture.Name == "hu")
+                {
+                    <li>@Html.ActionLink("Ausztria", "Index", "Ausztria")</li>
+                }
+                else if (Thread.CurrentThread.CurrentCulture.Name == "de")
+                {
+                    <li>@Html.ActionLink("Ungarn", "Index", "Ungarn")</li>
+                }
+                <li>@Html.ActionLink(MainLang.kapcsolat, "Index", "Kapcsolat")</li>
+            </ul>
+
+        </nav>
+    
+        <div class="lang">
+            @using (Html.BeginForm("SetCulture", "Fooldal"))
+            {
+                <label class="nyelv" for="hu">
+                    <input name="culture" id="hu" value="hu" type="radio" @selected("hu", culture) onclick="this.form.submit();" />
+                    <img src="~/Areas/allas/Content/Image/Nyelv/hun.png" alt="magyar" />
+                </label>
+
+                <label class="nyelv" for="de">
+                    <input name="culture" id="de" value="de" type="radio" @selected("de", culture) onclick="this.form.submit();" />
+                    <img src="~/Areas/allas/Content/Image/Nyelv/aut.png" alt="német" />
+                </label>
+            }    
+        </div>
+        
+
+        <main class="clearfix">
+            <aside class="col-md-3">
+                @if (Request.IsAuthenticated)
+                {
+                    @Html.Partial("_LoggedTemplate")
+                    <br />
+
+                    if (Thread.CurrentThread.CurrentCulture.Name == "hu")
+                    {
+                        @Html.ActionLink("Önéletrajz", "Index", "Oneletrajz")
+                        <br/>
+                        
+                        <a href="~/Areas/allas/Content/Download/Ebook-a-ausztriai-munka.pdf">E-Book</a>
+                    }
+
+                }
+                else
+                {
+                    Html.RenderAction("Login", "User", new { area = "" });
+                }
+
+                <br />
+                @if (Thread.CurrentThread.CurrentCulture.Name == "hu")
+                {
+                    @Html.Partial("_SzolgaltatasMenu")
+                }
+            </aside>
+
+            <section class="col-custom">
+                @RenderBody()
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - A weblapot készítette: Barasits Péter</p>
+        </footer>
+    </body>
+</html>

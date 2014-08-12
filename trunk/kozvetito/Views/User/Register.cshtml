@@ -1,0 +1,138 @@
+﻿@model kozvetito.Models.RegisterViewModel
+
+<div id="regPanel" title="Regisztráció">
+    @using (Html.BeginForm("Register", "User", FormMethod.Post, new { id = "regForm", area = "" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true)
+            
+            <div id="errorReg" class="validation-summary-errors"></div>
+
+            <input type="hidden" autofocus/>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.UserName).ToHtmlString()) })
+                    @Html.ValidationMessageFor(model => model.UserName)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Password).ToHtmlString()) })
+                    @Html.ValidationMessageFor(model => model.Password)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.ConfirmPassword).ToHtmlString()) })
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.LabelFor(model => model.Ferfi)
+                    @Html.RadioButtonFor(model => model.Ferfi, true) Férfi
+                    @Html.RadioButtonFor(model => model.Ferfi, false) Nő
+                    @Html.ValidationMessageFor(model => model.Ferfi)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.TextBoxFor(model => model.Nev, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.Nev).ToHtmlString()) })
+                    @Html.ValidationMessageFor(model => model.Nev)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-12">
+                    @Html.TextBoxFor(model => model.EMail, new { @class = "form-control", @placeholder = HttpUtility.HtmlDecode(Html.DisplayNameFor(m => m.EMail).ToHtmlString()), @type = "email" })
+                    @Html.ValidationMessageFor(model => model.EMail)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.CheckBoxFor(model => model.Felhaszn_feltetel, new { @id = "feltetel" })
+                    @Html.LabelFor(model => model.Felhaszn_feltetel)
+                    @Html.ValidationMessageFor(model => model.Felhaszn_feltetel)
+                </div>
+            </div>
+            @*<input type="submit" value="regisztráció" />*@
+        </div>
+    }
+</div>
+
+<script>
+    $(function() {
+        $("#regPanel").dialog({
+            autoOpen: true,
+            dialogClass: "no-close",
+            modal: true,
+            show: {
+                effect: "fade",
+                duration: 500
+            },
+            hide: {
+                effect: "explode",
+                duration: 500
+            },
+            width: 500,
+            buttons: [
+                {
+                    text: "Regisztráció",
+                    click: function() {
+                        if ($("#feltetel").is(":checked")) {
+                            if ($("#regForm").valid()) {
+                                $.msgBox({
+                                    title: "Regisztráció folyamatban",
+                                    type: "progress"
+                                });
+                                $.post("@Url.Action("Register","User", new { area = ""})",
+                                    $("#regForm").serialize(),
+                                    function(data, status, xhr) {
+                                        if (data.Success) {
+                                            $.msgBox({
+                                                title: "Sikeres regisztráció!",
+                                                content: "Köszönjük, hogy regisztrált!",
+                                                type: "info",
+                                                buttons: [{ value: "OK" }],
+                                                success: function(result) {
+                                                    if (result == "OK") {
+                                                        window.history.go(-1);
+                                                    }
+                                                }
+                                            });
+
+                                        } else {
+                                            $(".msgBox").hide();
+                                            $(".msgBoxBackGround").hide();
+                                            $("#errorReg").html(data.Errors);
+                                            $("#regPanel").effect("shake");
+                                        }
+                                    });
+                            }
+                        } else {
+                            $.msgBox({
+                                title: "Sikertelen regisztráció!",
+                                content: "A regisztrációhoz kötelező elfogadni a felhasználási feltételeket!",
+                                type: "error"
+                            });
+                        }
+                    }
+                },
+                {
+                    text: "Mégse",
+                    click: function() {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+        });
+    });
+</script>

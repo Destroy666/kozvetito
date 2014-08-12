@@ -1,0 +1,149 @@
+﻿@using kozvetito.Areas.allas.Models
+@model kozvetito.Areas.allas.Models.Oneletrajz
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@Scripts.Render("~/bundles/jqueryui")
+@Styles.Render("~/Content/jqueryui")
+@Scripts.Render("~/bundles/msgbox")
+@Styles.Render("~/bundles/msgboxcss")
+@Scripts.Render("~/bundles/jqueryval")
+
+<h2>Önéletrajz</h2>
+
+@using (Html.BeginForm("Index", "Oneletrajz", FormMethod.Post, new { id = "oneletrajz" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true)
+
+        <h3>Személyes adatok</h3>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Szuletesnap, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Szuletesnap, new { @type = "date" })
+                @Html.ValidationMessageFor(model => model.Szuletesnap)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IranyitoSzam, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IranyitoSzam)
+                @Html.ValidationMessageFor(model => model.IranyitoSzam)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Varos, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Varos)
+                @Html.ValidationMessageFor(model => model.Varos)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UtcaHsz, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UtcaHsz)
+                @Html.ValidationMessageFor(model => model.UtcaHsz)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telefon, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Telefon, new { @type = "tel" })
+                @Html.ValidationMessageFor(model => model.Telefon)
+            </div>
+        </div>
+
+        Jogosítvány
+
+        <div class="form-group">
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.A)
+                @Html.LabelFor(model => model.A)
+                &nbsp;&nbsp;
+                @Html.EditorFor(model => model.B)
+                @Html.LabelFor(model => model.B)
+                &nbsp;&nbsp;
+                @Html.EditorFor(model => model.C)
+                @Html.LabelFor(model => model.C)
+                &nbsp;&nbsp;
+                @Html.EditorFor(model => model.D)
+                @Html.LabelFor(model => model.D)
+                &nbsp;&nbsp;
+                @Html.EditorFor(model => model.E)
+                @Html.LabelFor(model => model.E)
+                &nbsp;&nbsp;
+                @Html.EditorFor(model => model.T)
+                @Html.LabelFor(model => model.T)
+            </div>
+        </div>
+        
+        <hr />
+
+        @Html.Action("Iskola")
+
+        <hr />
+
+        @Html.Action("Munkahely")
+
+        <hr />
+
+        @Html.Action("Nyelv")
+
+        <hr />
+
+        @Html.Action("Szgep")
+
+        <hr />
+
+        @Html.Action("Kozgaz")
+
+        <div class="form-group">
+            <div class="col-md-offset-10">
+                <input type="submit" value="Elküld" class="btn btn-default" />
+            </div>
+        </div>
+
+    </div>
+}
+
+<script>
+    $(function () {
+        if (!Modernizr.inputtypes.date) {
+            $.datepicker.regional['hu'] = {
+                closeText: 'bezárás',
+                prevText: '<< vissza',
+                nextText: 'előre >>',
+                currentText: 'ma',
+                monthNames: ['Január', 'Február', 'Március', 'Április', 'Május', 'Június',
+                    'Július', 'Augusztus', 'Szeptember', 'Október', 'November', 'December'],
+                monthNamesShort: ['Jan', 'Feb', 'Már', 'Ápr', 'Máj', 'Jún',
+                    'Júl', 'Aug', 'Szep', 'Okt', 'Nov', 'Dec'],
+                dayNames: ['Vasárnap', 'Hétfő', 'Kedd', 'Szerda', 'Csütörtök', 'Péntek', 'Szombat'],
+                dayNamesShort: ['Vas', 'Hét', 'Ked', 'Sze', 'Csü', 'Pén', 'Szo'],
+                dayNamesMin: ['V', 'H', 'K', 'Sze', 'Cs', 'P', 'Szo'],
+                dateFormat: 'yy-mm-dd', firstDay: 1,
+                isRTL: false
+            };
+
+            $.datepicker.setDefaults($.datepicker.regional['hu']);
+
+            $("#Szuletesnap").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "-80:-18"
+            });
+        }
+
+    });
+</script>

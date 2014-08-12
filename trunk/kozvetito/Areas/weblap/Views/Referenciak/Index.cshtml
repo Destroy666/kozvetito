@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Referenciák";
+    Layout = "~/Areas/weblap/Views/Shared/_Layout.cshtml";
+}
+
+<article>
+    <h3>Referenciák</h3>
+
+    <table>
+        <tr>
+            <td>
+                <img src="~/Areas/weblap/Content/Image/ausztriai-munka.png" />
+            </td>
+            <td>
+                <h3>@Html.ActionLink("Ausztriai-munka.com", "Index", "Fooldal", new { area = "allas" }, null)</h3>
+                <p>
+                    Állás keresési és hirdetési portál, osztrák munkaadóknak, illetve asuztriában dolgozni vágyoknak.
+                    A kétnyelvű oldalon elkészíthető saját önéletrajzunk, amit eljuttatunk az illetékes munkaadóknak, akik épp munkaerőt keresnek az adott munkakőrben.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Areas/weblap/Content/Image/ExclusiveTeam.png" />
+            </td>
+            <td>
+                <h3>@Html.ActionLink("ExclusiveTeam.net", "Index", "Home", new { area = "" }, null)</h3>
+                <p>
+                    Az ExclusiveTeam egy közvetítői iroda, ahol az ingatlan közvetítéstől, a biztosításon át, az ügyvédig minden megtalálható.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Areas/weblap/Content/Image/hifikiss.png" />
+            </td>
+            <td>
+                <h3><a href="http://hifikiss.hu">HiFiKiss.hu</a></h3>
+                <p>
+                    Professzionális hang és fénytechnikával foglalkozó üzlet, ahol ellenőrzőtt minőségű, garanciális használt és új technikákat lehet beszerezni, az otthoni célú felhasználástól, a hangosítási eszközökön át, egész a stúdió berendezésekig.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Areas/weblap/Content/Image/vegallomas.png" />
+            </td>
+            <td>
+                <h3><a href="http://vegallomas.no-ip.org">Vegallomas.no-ip.org</a></h3>
+                <p>
+                    Szombathely egyik legnagyobb élőzenés klubja, ahol a nagy hazai előadók mellett időnként 1-1 külföldi zenekar is fellép.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="~/Areas/weblap/Content/Image/webdesign.png" />
+            </td>
+            <td>
+                <h3><a href="http://web-design.azurewebsites.net">web-design.azurewebsites.net</a></h3>
+                <p>
+                    Web-design tanfolyam egyik beadandó házifeladataként készült weblap, ami bemutat egy pár weben alkalmazható grafikai megoldást.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</article>

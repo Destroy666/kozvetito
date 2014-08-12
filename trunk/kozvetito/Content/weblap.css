@@ -1,0 +1,25 @@
+﻿table {
+    border-spacing: 0 10px;
+    border-collapse: separate;
+}
+
+tr {
+    display: block;
+    border-bottom: 1px solid #008000;
+}
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+td {
+    vertical-align: top;
+}
+
+    td h3 {
+        margin: 0;
+    }
+
+    td:nth-child(2) {
+        padding-left: 10px;
+    }

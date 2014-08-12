@@ -1,0 +1,20 @@
+﻿@using kozvetito.Areas.allas.Resource
+<h4>@MainLang.bejelentkezve</h4>
+
+<p>@MainLang.udv_az_oldalon</p>
+
+@using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @area = ""}))
+{
+    @Html.AntiForgeryToken()
+    <a href="javascript:kilep();">@MainLang.kijelentkezes</a>
+}
+
+<script>
+    function kilep() {
+        $.post("/User/LogOff",
+            $("#logoutForm").serialize(),
+            function() {
+                location.reload(true);
+            });
+    }
+</script>

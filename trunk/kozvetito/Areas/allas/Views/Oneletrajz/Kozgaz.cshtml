@@ -1,0 +1,25 @@
+﻿@model IEnumerable<kozvetito.Areas.allas.Models.AdminEsKozgaz>
+
+<h3>Adminisztrációs és közgazdasági ismeretek</h3>
+
+<div class="form-group">
+    @Html.Action("UjKozgaz")
+    <div class="col-md-10">
+        <table class="nyelvTable">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SzotarAdminEsKozgaz.Hu)
+                        -
+                        @Html.DisplayFor(modelItem => item.SzotarTudasszint.Hu)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Törlés", "KozgazTorles", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>  
+    </div>
+</div>

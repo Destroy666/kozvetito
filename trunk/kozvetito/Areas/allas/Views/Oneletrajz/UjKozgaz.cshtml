@@ -1,0 +1,62 @@
+﻿@model kozvetito.Areas.allas.Models.AdminEsKozgaz
+           
+<input type="button" value="Új hozzáadása" id="ujAdmin" class="control-label col-md-2" />
+
+<div id="admin" title="Adminisztrációs és közgazdasági ismeretek">
+    @using (Html.BeginForm("ujKozgaz", "Oneletrajz", FormMethod.Post, new { id = "kozgazForm" }))
+    {
+        <p>
+            @Html.LabelFor(model => model.IsmeretKod)
+            @Html.DropDownListFor(model => model.IsmeretKod, (IEnumerable<SelectListItem>)ViewBag.Admin, new{id="kozgazIsmeretKod",name="kozgazIsmeretKod"})
+        </p>
+
+        <p>
+            @Html.LabelFor(model => model.TudasszintKod)
+            @Html.DropDownListFor(model => model.TudasszintKod, (IEnumerable<SelectListItem>)ViewBag.Tudasszint,new{id="kozgazTudasszintKod",name="kozgazTudasszintKod"})
+        </p>
+    }
+</div>
+
+<script>
+    $("#admin").dialog({
+        autoOpen: false,
+        width: 500,
+        modal: true,
+        show: {
+            effect: "scale",
+            duration: 500
+        },
+        hide: {
+            effect: "explode",
+            duration: 500
+        },
+        buttons: {
+            "Hozzáad": function () {
+                $(this).dialog("close");
+                $.post("Oneletrajz/ujKozgaz",
+                    {
+                        IsmeretKod: $('#kozgazIsmeretKod').val(),
+                        TudasszintKod: $('#kozgazTudasszintKod').val()
+                    },
+                    function(data, status, xhr) {
+                        if (!data.Success) {
+                            $.msgBox({
+                                title: "Sikertelen adatfelvitel",
+                                content: "Nem sikerült elmenteni az általad megadott adminisztrációs és közgazdasági ismeretet.",
+                                type: "error"
+                            });
+                        } else {
+                            window.location.href = "Oneletrajz";
+                        }
+                    });
+            },
+            "Mégse": function () {
+                $(this).dialog("close");
+            }
+        }
+    })
+
+    $("#ujAdmin").on("click", function () {
+        $("#admin").dialog("open");
+    })
+</script>

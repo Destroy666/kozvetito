@@ -1,0 +1,57 @@
+﻿@using kozvetito.Models
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ExclusiveTeam</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/mainpage")
+    @RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Főoldal", "Index", "Home")</li>
+                <li>@Html.ActionLink("Rólunk", "Index", "Rolunk", new { area = "" },  null)</li>
+                <li>@Html.ActionLink("Szolgáltatásaink", "Index", "Szolgaltatasaink", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Kapcsolat", "Index", "Kapcsolat", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Formanyomtatványok", "Index", "Formanyomtatvanyok", new { area = "" }, null)</li>
+                <li>@Html.ActionLink("Partnerek", "Index", "Partnerek", new { area = "" }, null)</li>
+            </ul>
+        </nav>    
+    </header>
+    
+
+    <main class="clearfix">
+        <aside class="col-md-3">
+            @if (Request.IsAuthenticated)
+            {
+                @Html.Partial("_LoggedTemplate")
+            }
+            else
+            {
+                Html.RenderAction("Login", "User", new { area = "" });
+            }
+
+            <br />
+            @Html.Partial("_SzolgaltatasMenu")
+        </aside>
+        <section class="col-custom">
+            @RenderBody()
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; @DateTime.Now.Year - A weblapot készítette: Barasits Péter</p>
+    </footer>
+
+    
+</body>
+</html>
