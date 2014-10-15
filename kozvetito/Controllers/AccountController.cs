@@ -76,8 +76,6 @@ namespace kozvetito.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
-            {
                 var user = new ApplicationUser() { UserName = model.UserName };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
@@ -89,7 +87,6 @@ namespace kozvetito.Controllers
                 {
                     AddErrors(result);
                 }
-            }
 
             // If we got this far, something failed, redisplay form
             return View(model);
