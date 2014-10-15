@@ -10,442 +10,445 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_Data/kozvetito.mdf">
-      <publishTime>03/18/2014 18:47:05</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="App_Data/kozvetito_log.ldf">
-      <publishTime>03/18/2014 18:47:06</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Areas/allas/Content/Download/Ebook-a-ausztriai-munka.pdf">
-      <publishTime>03/18/2014 18:47:27</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Ausztria/aulogo.png">
-      <publishTime>10/29/2013 19:54:22</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Ausztria/auzaszlo.png">
-      <publishTime>10/29/2013 19:54:22</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Ausztria/au_terkep.png">
-      <publishTime>10/29/2013 19:54:22</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Fooldal/hibak.jpg">
-      <publishTime>10/29/2013 16:58:56</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Fooldal/info.jpg">
-      <publishTime>10/29/2013 16:58:56</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Fooldal/karrierhez_vezeto_ut.jpg">
-      <publishTime>10/29/2013 16:58:56</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Fooldal/munka.jpg">
-      <publishTime>10/29/2013 16:58:56</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Fooldal/reglogo.jpg">
-      <publishTime>10/29/2013 16:58:56</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Fooldal/titok.jpg">
-      <publishTime>10/29/2013 16:58:56</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/header.jpg">
-      <publishTime>10/28/2013 15:26:36</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/kocka.png">
-      <publishTime>10/28/2013 15:40:49</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Nyelv/aut.png">
-      <publishTime>03/18/2014 11:13:15</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Content/Image/Nyelv/hun.png">
-      <publishTime>03/18/2014 11:13:15</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Allaslehetosegek/Index.cshtml">
-      <publishTime>03/18/2014 18:41:29</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Arak/Index.cshtml">
-      <publishTime>03/18/2014 20:43:56</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Ausztria/Index.cshtml">
-      <publishTime>10/29/2013 20:52:01</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fizetes/Bankkartya.cshtml">
-      <publishTime>02/21/2014 16:11:38</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fizetes/Feldolgozas.cshtml">
-      <publishTime>02/18/2014 16:54:36</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fizetes/Index.cshtml">
-      <publishTime>02/21/2014 16:09:15</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fizetes/Koszonjuk.cshtml">
-      <publishTime>02/21/2014 15:14:57</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Az_ausztriai_munkavallalas_titkai.cshtml">
-      <publishTime>03/18/2014 19:04:32</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/A_karrierhez_vezeto_ut_lepesei.cshtml">
-      <publishTime>03/18/2014 20:07:50</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Die_restriktiven_massnahmen.cshtml">
-      <publishTime>03/26/2014 16:01:16</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Ernsthafte_sanktionen_zu_rechnen_sein.cshtml">
-      <publishTime>03/26/2014 15:56:58</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Hogyan_kerulheti_el_a_7_legnagyobb_hibat_ausztriai_munkavallalaskor.cshtml">
-      <publishTime>03/18/2014 20:05:34</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Hogyan_regisztraljak_Milyen_csomagot_valasszak.cshtml">
-      <publishTime>03/18/2014 20:06:47</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Index.cshtml">
-      <publishTime>03/26/2014 16:20:58</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Nekunk_az_a_fontos_ami_onnek_fontos.cshtml">
-      <publishTime>03/18/2014 20:03:14</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Fooldal/Welche_Anderungen_bringt.cshtml">
-      <publishTime>03/26/2014 15:45:46</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Kapcsolat/Index.cshtml">
-      <publishTime>03/18/2014 20:48:18</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/MunkatKinalok/Index.cshtml">
-      <publishTime>03/18/2014 13:35:47</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/MunkatKinalok/Koszonjuk.cshtml">
-      <publishTime>01/31/2014 15:49:28</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/MunkatKinalok/NemVagyBejelentkezve.cshtml">
-      <publishTime>03/18/2014 16:04:52</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/AdminIsm.cshtml">
-      <publishTime>01/30/2014 23:28:18</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/FelhIsm.cshtml">
-      <publishTime>01/30/2014 23:26:47</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Fizetes.cshtml">
-      <publishTime>02/06/2014 16:54:51</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Index.cshtml">
-      <publishTime>01/30/2014 23:51:45</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Iskola.cshtml">
-      <publishTime>01/30/2014 17:11:13</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Kozgaz.cshtml">
-      <publishTime>01/30/2014 23:37:11</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Munkahely.cshtml">
-      <publishTime>01/30/2014 17:44:00</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/NemVagyBejelentkezve.cshtml">
-      <publishTime>01/16/2014 14:19:00</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Nyelv.cshtml">
-      <publishTime>01/30/2014 20:42:04</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/ProgIsm.cshtml">
-      <publishTime>01/30/2014 23:26:17</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Szgep.cshtml">
-      <publishTime>01/20/2014 15:37:11</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjAdmin.cshtml">
-      <publishTime>01/30/2014 20:59:24</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjIskola.cshtml">
-      <publishTime>01/30/2014 16:30:53</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjIsm.cshtml">
-      <publishTime>01/30/2014 20:46:43</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjKozgaz.cshtml">
-      <publishTime>01/30/2014 23:44:08</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjMunkahely.cshtml">
-      <publishTime>01/30/2014 17:23:17</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjNyelv.cshtml">
-      <publishTime>01/30/2014 17:51:41</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjProg.cshtml">
-      <publishTime>01/30/2014 21:02:01</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/UjSzgep.cshtml">
-      <publishTime>01/30/2014 21:19:18</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Rolunk/Index.cshtml">
-      <publishTime>03/18/2014 20:36:53</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Shared/_Layout.cshtml">
-      <publishTime>03/18/2014 18:49:36</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/Szolgaltatasaink/Index.cshtml">
-      <publishTime>03/18/2014 20:34:14</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
+    </File>
+    <File Include="Areas/allas/Views/Ungarn/Index.cshtml">
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/web.config">
-      <publishTime>03/18/2014 11:11:08</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/allas/Views/_ViewStart.cshtml">
-      <publishTime>10/28/2013 15:09:32</publishTime>
+      <publishTime>10/09/2014 16:51:24</publishTime>
     </File>
     <File Include="Areas/behajtas/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 12:05:12</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/behajtas/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:27:38</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/behajtas/Views/Referenciak/Index.cshtml">
-      <publishTime>12/12/2013 14:43:49</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/behajtas/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:28:08</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/behajtas/Views/Szolgaltatasok/Index.cshtml">
-      <publishTime>12/12/2013 14:44:03</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/behajtas/Views/web.config">
-      <publishTime>11/06/2013 13:24:36</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/EletBiztositas/Index.cshtml">
-      <publishTime>12/12/2013 11:50:03</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 11:40:50</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/GepjarmuBiztositas/Index.cshtml">
-      <publishTime>12/12/2013 11:46:45</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:26:32</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:26:59</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/VagyonBiztositas/Index.cshtml">
-      <publishTime>12/12/2013 11:44:03</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/biztositas/Views/web.config">
-      <publishTime>11/06/2013 13:17:19</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/cegalapitas/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 10:34:38</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/cegalapitas/Views/KulfoldiCegalapitas/Index.cshtml">
-      <publishTime>12/12/2013 10:43:12</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/cegalapitas/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:25:31</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/cegalapitas/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:25:52</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/cegalapitas/Views/web.config">
-      <publishTime>12/11/2013 19:33:21</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/forditas/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 12:35:11</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/forditas/Views/Irodalmi/Index.cshtml">
-      <publishTime>12/12/2013 12:25:07</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/forditas/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:24:07</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/forditas/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:24:27</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/forditas/Views/web.config">
-      <publishTime>11/06/2013 13:26:43</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/AdasVetel/Index.cshtml">
-      <publishTime>12/12/2013 14:36:47</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/Energetika/Index.cshtml">
-      <publishTime>12/12/2013 14:37:45</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/Ertekbecsles/Index.cshtml">
-      <publishTime>12/12/2013 16:18:22</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 16:17:23</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/Kozvetites/Index.cshtml">
-      <publishTime>12/12/2013 16:17:51</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:22:03</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/Shared/_Layout.cshtml">
       <publishTime>01/29/2014 17:22:25</publishTime>
     </File>
     <File Include="Areas/ingatlan/Views/web.config">
-      <publishTime>11/06/2013 12:00:57</publishTime>
+      <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/jogiszolgaltatasok/Views/AdasVetel/Index.cshtml">
-      <publishTime>12/12/2013 16:23:07</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/jogiszolgaltatasok/Views/Cegalapitas/Index.cshtml">
-      <publishTime>12/12/2013 14:38:39</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/jogiszolgaltatasok/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 14:38:13</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/jogiszolgaltatasok/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:20:50</publishTime>
+      <publishTime>10/09/2014 16:51:23</publishTime>
     </File>
     <File Include="Areas/jogiszolgaltatasok/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:21:11</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/jogiszolgaltatasok/Views/web.config">
-      <publishTime>11/06/2013 12:57:56</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/Adotanacsadas/Index.cshtml">
-      <publishTime>12/12/2013 11:15:21</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/AdoVisszaigenyles/Index.cshtml">
-      <publishTime>12/12/2013 11:15:32</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 16:23:58</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/Konyveles/Index.cshtml">
-      <publishTime>12/12/2013 11:17:28</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:19:43</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:20:08</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/konyveles/Views/web.config">
-      <publishTime>11/06/2013 13:06:08</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Altalanos/Index.cshtml">
-      <publishTime>12/12/2013 16:15:24</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Bank/Index.cshtml">
-      <publishTime>12/12/2013 14:32:00</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 14:19:49</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Ingatlan/Index.cshtml">
-      <publishTime>12/12/2013 14:29:05</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Konyveles/Index.cshtml">
-      <publishTime>12/12/2013 14:30:51</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Munkaero/Index.cshtml">
-      <publishTime>12/12/2013 14:26:20</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:18:32</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:18:59</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Vagyontanacsadas/Index.cshtml">
-      <publishTime>12/12/2013 14:32:51</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/Vallalkozas/Index.cshtml">
-      <publishTime>12/12/2013 14:30:14</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/letelepedes/Views/web.config">
-      <publishTime>11/06/2013 11:46:49</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/oktatas/Views/Egyeb/Index.cshtml">
-      <publishTime>12/12/2013 12:02:16</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/oktatas/Views/Fooldal/Index.cshtml">
       <publishTime>12/12/2013 11:59:21</publishTime>
     </File>
     <File Include="Areas/oktatas/Views/NemetAngol/Index.cshtml">
-      <publishTime>12/12/2013 12:01:14</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/oktatas/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:17:27</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/oktatas/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:17:52</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/oktatas/Views/web.config">
-      <publishTime>11/06/2013 13:20:39</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/palyazatiras/Views/Fooldal/Index.cshtml">
-      <publishTime>01/29/2014 17:06:28</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/palyazatiras/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:12:51</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/palyazatiras/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 16:33:37</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/palyazatiras/Views/web.config">
-      <publishTime>01/28/2014 20:38:19</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/partner/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 11:55:47</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/partner/Views/Partnerek/Index.cshtml">
       <publishTime>01/29/2014 17:16:22</publishTime>
     </File>
     <File Include="Areas/partner/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:16:49</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/partner/Views/web.config">
-      <publishTime>12/12/2013 11:51:47</publishTime>
+      <publishTime>10/09/2014 16:51:22</publishTime>
     </File>
     <File Include="Areas/penzugy/Views/AusztriaiBefektetes/Index.cshtml">
-      <publishTime>12/12/2013 11:33:06</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/penzugy/Views/Bankszamla/Index.cshtml">
-      <publishTime>12/12/2013 11:36:15</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/penzugy/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 11:25:08</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/penzugy/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:14:50</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/penzugy/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:15:30</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/penzugy/Views/web.config">
-      <publishTime>11/06/2013 13:12:55</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Areas/weblap/Content/Image/ausztriai-munka.png">
-      <publishTime>11/19/2013 14:41:08</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Content/Image/ExclusiveTeam.png">
-      <publishTime>11/19/2013 14:41:33</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Content/Image/hifikiss.png">
-      <publishTime>11/19/2013 14:41:49</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Content/Image/vegallomas.png">
-      <publishTime>11/19/2013 14:42:04</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Content/Image/webdesign.png">
-      <publishTime>11/19/2013 14:42:15</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Views/Fooldal/Index.cshtml">
-      <publishTime>12/12/2013 16:30:38</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:13:19</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Views/Referenciak/Index.cshtml">
-      <publishTime>12/12/2013 16:31:15</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:13:56</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="Areas/weblap/Views/web.config">
-      <publishTime>11/06/2013 14:24:20</publishTime>
+      <publishTime>10/09/2014 16:51:21</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>02/18/2014 16:23:15</publishTime>
+      <publishTime>10/09/2014 16:51:30</publishTime>
     </File>
     <File Include="bin/Content/image/banner-small.png">
       <publishTime>11/14/2013 14:53:12</publishTime>
@@ -454,382 +457,382 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2013 14:53:12</publishTime>
     </File>
     <File Include="bin/de/kozvetito.resources.dll">
-      <publishTime>03/26/2014 16:09:06</publishTime>
+      <publishTime>10/09/2014 17:02:24</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>02/18/2014 16:23:16</publishTime>
+      <publishTime>10/09/2014 16:51:34</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
-      <publishTime>02/18/2014 16:23:16</publishTime>
+      <publishTime>10/09/2014 16:51:34</publishTime>
     </File>
     <File Include="bin/kozvetito.dll">
-      <publishTime>03/26/2014 16:09:06</publishTime>
+      <publishTime>10/09/2014 17:02:24</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
-      <publishTime>10/28/2013 14:19:46</publishTime>
+      <publishTime>10/09/2014 16:51:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
-      <publishTime>10/28/2013 14:19:46</publishTime>
+      <publishTime>10/09/2014 16:51:36</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
-      <publishTime>10/28/2013 14:19:46</publishTime>
+      <publishTime>10/09/2014 16:51:35</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:37</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:36</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:38</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:30</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:32</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Google.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:35</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
-      <publishTime>02/18/2014 16:23:20</publishTime>
+      <publishTime>10/09/2014 16:51:35</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
-      <publishTime>02/18/2014 16:23:20</publishTime>
+      <publishTime>10/09/2014 16:51:35</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
-      <publishTime>02/18/2014 16:23:20</publishTime>
+      <publishTime>10/09/2014 16:51:30</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>10/28/2013 14:19:42</publishTime>
+      <publishTime>10/09/2014 16:51:31</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>02/18/2014 16:23:20</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="bin/Owin.dll">
-      <publishTime>10/28/2013 14:19:46</publishTime>
+      <publishTime>10/09/2014 16:51:36</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>02/18/2014 16:23:18</publishTime>
+      <publishTime>10/09/2014 16:51:31</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:30</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/18/2014 16:23:19</publishTime>
+      <publishTime>10/09/2014 16:51:35</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>02/18/2014 16:23:18</publishTime>
+      <publishTime>10/09/2014 16:51:31</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>02/18/2014 16:23:18</publishTime>
+      <publishTime>10/09/2014 16:51:31</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>02/18/2014 16:23:18</publishTime>
+      <publishTime>10/09/2014 16:51:31</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>02/18/2014 16:23:18</publishTime>
+      <publishTime>10/09/2014 16:51:31</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>02/18/2014 16:23:20</publishTime>
+      <publishTime>10/09/2014 16:51:36</publishTime>
     </File>
     <File Include="bin/WebMatrix.WebData.dll">
       <publishTime>07/09/2013 11:05:12</publishTime>
     </File>
     <File Include="Content/allas.css">
-      <publishTime>03/18/2014 16:12:30</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css.map">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.min.css">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/bootstrap.css.map">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/image/bankkartya.jpg">
-      <publishTime>02/06/2014 17:14:09</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/image/banner-large-uj.png">
-      <publishTime>11/14/2013 15:10:36</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/image/banner-large.png">
-      <publishTime>11/14/2013 14:53:12</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/image/banner-small-uj.png">
-      <publishTime>12/12/2013 15:39:56</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/image/banner-small.png">
-      <publishTime>11/14/2013 14:53:12</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/image/logo-small.png">
-      <publishTime>11/20/2013 12:15:01</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/image/voxpay_5.gif">
-      <publishTime>02/06/2014 17:16:24</publishTime>
+      <publishTime>10/09/2014 16:51:27</publishTime>
     </File>
     <File Include="Content/mainpage.css">
-      <publishTime>12/12/2013 16:13:56</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/msgbox/alert.png">
-      <publishTime>11/05/2013 17:09:28</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/msgbox/confirm.png">
       <publishTime>11/05/2013 17:09:28</publishTime>
     </File>
     <File Include="Content/msgbox/error.png">
-      <publishTime>11/05/2013 17:09:28</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/msgbox/info.png">
-      <publishTime>11/05/2013 17:09:28</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/msgbox/msgBoxBackGround.png">
       <publishTime>11/05/2013 17:09:28</publishTime>
     </File>
     <File Include="Content/msgBoxLight.css">
-      <publishTime>11/07/2013 17:50:58</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="Content/OK.log">
-      <publishTime>02/18/2014 17:23:44</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/Profil/default.jpg">
-      <publishTime>11/07/2013 20:02:08</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>02/06/2014 17:33:02</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/animated-overlay.gif">
-      <publishTime>02/18/2014 16:23:53</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_diagonals-thick_20_666666_40x40.png">
-      <publishTime>11/13/2013 20:30:17</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
-      <publishTime>02/18/2014 16:23:53</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
-      <publishTime>02/18/2014 16:23:53</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
-      <publishTime>02/18/2014 16:23:53</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery-ui.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.accordion.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.all.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.autocomplete.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.base.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.button.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.core.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.datepicker.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.dialog.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.menu.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.progressbar.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.resizable.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.selectable.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.slider.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.spinner.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.tabs.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.theme.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/jquery.ui.tooltip.css">
-      <publishTime>02/18/2014 16:23:52</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/animated-overlay.gif">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-icons_222222_256x240.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-icons_454545_256x240.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-icons_888888_256x240.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery-ui.min.css">
-      <publishTime>02/18/2014 16:23:44</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.menu.min.css">
-      <publishTime>02/18/2014 16:23:46</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.spinner.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/themes/base/minified/jquery.ui.tooltip.min.css">
-      <publishTime>02/18/2014 16:23:45</publishTime>
+      <publishTime>10/09/2014 16:51:28</publishTime>
     </File>
     <File Include="Content/weblap.css">
-      <publishTime>11/19/2013 15:16:38</publishTime>
+      <publishTime>10/09/2014 16:51:29</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>10/28/2013 14:19:37</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>10/28/2013 14:19:37</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>02/18/2014 16:24:22</publishTime>
+      <publishTime>10/09/2014 16:51:18</publishTime>
     </File>
     <File Include="Properties/DataSources/System.Xml.XmlNode.datasource">
-      <publishTime>02/04/2014 11:53:07</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>02/18/2014 16:23:25</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Scripts/jquery-2.0.3.js">
       <publishTime>11/05/2013 15:26:05</publishTime>
@@ -841,13 +844,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/05/2013 15:26:05</publishTime>
     </File>
     <File Include="Scripts/jquery-2.1.0.js">
-      <publishTime>02/18/2014 16:23:35</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/jquery-2.1.0.min.js">
-      <publishTime>02/18/2014 16:23:35</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Scripts/jquery-2.1.0.min.map">
-      <publishTime>02/18/2014 16:23:34</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Scripts/jquery-ui-1.10.3.js">
       <publishTime>11/05/2013 15:26:12</publishTime>
@@ -856,73 +859,73 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/05/2013 15:26:12</publishTime>
     </File>
     <File Include="Scripts/jquery-ui-1.10.4.js">
-      <publishTime>02/18/2014 16:23:44</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/jquery-ui-1.10.4.min.js">
-      <publishTime>02/18/2014 16:23:44</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Scripts/jquery.form.min.js">
-      <publishTime>11/08/2013 14:59:47</publishTime>
+      <publishTime>10/09/2014 16:51:20</publishTime>
     </File>
     <File Include="Scripts/jquery.msgBox.js">
-      <publishTime>11/05/2013 18:42:52</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
-      <publishTime>10/28/2013 14:19:47</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>10/28/2013 14:19:47</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>02/18/2014 16:24:03</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>02/18/2014 16:24:03</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>10/28/2013 14:19:42</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.7.1.js">
-      <publishTime>02/18/2014 16:24:16</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/respond.js">
-      <publishTime>02/18/2014 16:24:20</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Scripts/respond.min.js">
       <publishTime>02/18/2014 16:24:20</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>02/18/2014 16:24:17</publishTime>
+      <publishTime>10/09/2014 16:51:19</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/ExternalLoginFailure.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/Login.cshtml">
-      <publishTime>11/04/2013 15:28:01</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/Manage.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/Register.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/_ChangePasswordPartial.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/_RemoveAccountPartial.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Account/_SetPasswordPartial.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Formanyomtatvanyok/Index.cshtml">
-      <publishTime>12/12/2013 14:19:10</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>10/28/2013 14:19:37</publishTime>
@@ -931,64 +934,64 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/28/2013 14:19:37</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>12/12/2013 16:13:37</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Home/Mail.cshtml">
-      <publishTime>02/19/2014 16:56:29</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Kapcsolat/Index.cshtml">
-      <publishTime>12/12/2013 14:18:56</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Partnerek/Index.cshtml">
-      <publishTime>01/29/2014 17:30:31</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Rolunk/Index.cshtml">
-      <publishTime>12/12/2013 14:18:23</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>10/28/2013 14:19:44</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/Login.cshtml">
       <publishTime>11/14/2013 17:58:29</publishTime>
     </File>
     <File Include="Views/Shared/Register.cshtml">
-      <publishTime>11/20/2013 14:35:27</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/_anonLayout.cshtml">
-      <publishTime>02/04/2014 15:59:02</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>01/29/2014 17:31:04</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/_LoggedTemplate.cshtml">
-      <publishTime>03/18/2014 16:28:33</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/_Login.cshtml">
       <publishTime>11/20/2013 18:24:53</publishTime>
     </File>
     <File Include="Views/Shared/_Register.cshtml">
-      <publishTime>11/20/2013 18:10:45</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Shared/_SzolgaltatasMenu.cshtml">
-      <publishTime>01/29/2014 17:09:49</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Szolgaltatasaink/Index.cshtml">
-      <publishTime>12/12/2013 14:18:40</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/User/Login.cshtml">
-      <publishTime>03/18/2014 15:50:17</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/User/Register.cshtml">
-      <publishTime>02/17/2014 15:39:39</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>10/29/2013 20:16:51</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>10/28/2013 14:19:37</publishTime>
+      <publishTime>10/09/2014 16:51:26</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/26/2014 16:09:07</publishTime>
+      <publishTime>10/09/2014 17:02:25</publishTime>
     </File>
   </ItemGroup>
 </Project>
