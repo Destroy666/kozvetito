@@ -76,8 +76,20 @@ namespace kozvetito.Areas.allas.Controllers
             }
             else
             {
-                db.Oneletrajzes.Attach(model);
-                db.Entry(model).State = EntityState.Modified;
+                var onelet = db.Oneletrajzes.Where(x => x.UId == uid).First();
+
+                onelet.Szuletesnap = model.Szuletesnap;
+                onelet.IranyitoSzam = model.IranyitoSzam;
+                onelet.Varos = model.Varos;
+                onelet.UtcaHsz = model.UtcaHsz;
+                onelet.Telefon = model.Telefon;
+                onelet.A = model.A;
+                onelet.B = model.B;
+                onelet.C = model.C;
+                onelet.D = model.D;
+                onelet.E = model.E;
+                onelet.T = model.T;
+
             }
             db.SaveChanges();
 
