@@ -127,7 +127,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/09/2014 16:51:25</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Index.cshtml">
-      <publishTime>10/09/2014 16:51:25</publishTime>
+      <publishTime>10/15/2014 16:02:58</publishTime>
     </File>
     <File Include="Areas/allas/Views/Oneletrajz/Iskola.cshtml">
       <publishTime>10/09/2014 16:51:25</publishTime>
@@ -457,7 +457,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2013 14:53:12</publishTime>
     </File>
     <File Include="bin/de/kozvetito.resources.dll">
-      <publishTime>10/09/2014 17:02:24</publishTime>
+      <publishTime>10/15/2014 16:01:00</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>10/09/2014 16:51:34</publishTime>
@@ -466,7 +466,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/09/2014 16:51:34</publishTime>
     </File>
     <File Include="bin/kozvetito.dll">
-      <publishTime>10/09/2014 17:02:24</publishTime>
+      <publishTime>10/15/2014 16:01:00</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>10/09/2014 16:51:36</publishTime>
