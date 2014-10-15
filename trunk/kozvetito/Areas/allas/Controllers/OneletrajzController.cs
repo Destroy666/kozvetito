@@ -76,12 +76,8 @@ namespace kozvetito.Areas.allas.Controllers
             }
             else
             {
-                var orig = db.Oneletrajzes.First(x=>x.UId == model.UId);
-
-                if (orig != null)
-                {
-                    db.Entry(orig).CurrentValues.SetValues(model);
-                }
+                db.Oneletrajzes.Attach(model);
+                db.Entry(model).State = EntityState.Modified;
             }
             db.SaveChanges();
 
